@@ -2,133 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apna Store</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apna Store</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <link rel="shortcut icon" href="./android-chrome-512x512.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./android-chrome-512x512.png" type="image/x-icon" />
 
-    <script src="https://kit.fontawesome.com/f1403a3e89.js" crossorigin="anonymous"></script>
-
-
-
-
-
+  <script src="https://kit.fontawesome.com/f1403a3e89.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Apna Store</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Store</a>
-                    </li>
-
-
-                </ul>
-                <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
-            </div>
+  <!-- navbar start -->
+  <nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
         </div>
-    </nav>
-
-    <!--Navbar End -->
-
-    <div class="store_container">
-
-        <!-- Filter By Search -->
-        <div class="dummy_container">
-
-
-            <div class="filter-box">
-                <p class="filter-heading">Filter by Price</p>
-
-                <div class="f-button-groups">
-
-                    <button class="btn filter-button" onclick="displayUsers()">All Products</button>
-                    <button class="btn filter-button" onclick="filterOne_hun()">$1 - $100</button>
-                    <button class="btn filter-button" onclick="filterOnehun_Fivehun()">$100 - $500</button>
-                    <button class="btn filter-button" onclick="filterFivehun_Oneth()">$500 - $1000</button>
-                    <button class="btn filter-button" onclick="filterOneth_Above()">$1000 - Above</button>
-                </div>
-                <hr>
-            </div>
-            <!-- Filter by Category -->
-
-            <div class="filter-box">
-                <p class="filter-heading">Filter by category</p>
-
-                <div class="f-button-groups">
-
-                    <button class="btn filter-button" onclick="displayUsers()">All Products</button>
-                    <button class="btn filter-button" onclick="">Smartphones</button>
-                    <button class="btn filter-button" onclick="">Laptops</button>
-                    <button class="btn filter-button" onclick="">Fragrances</button>
-                    <button class="btn filter-button" onclick="">Skincare</button>
-                    <button class="btn filter-button" onclick="">Groceries</button>
-                    <button class="btn filter-button" onclick="">Home-decoration</button>
-                </div>
-                <hr>
-            </div>
+        <ul class="menu-items">
+            <li><a href="./home.html"  >Home</a></li>
+            <li><a href="./index.html" class="active">Store</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h1 class="logo">Navbar</h1>
+    </div>
+</nav>
 
 
-            <!-- Filter by Rating -->
-            <div class="filter-box">
-                <p class="filter-heading">Filter by Rating</p>
+  <!--Navbar End -->
+<div class="body_container">
 
-                <div class="f-button-groups">
 
-                    <button class="btn filter-button" onclick="displayUsers()">All Products</button>
-                    <button class="btn filter-button" onclick="">>4.5<i class="fa-solid fa-star"></i></button>
-                    <button class="btn filter-button" onclick="">>4<i class="fa-solid fa-star"></i></button>
-                    <button class="btn filter-button" onclick="">>3.5<i class="fa-solid fa-star"></i></button>
-                    <button class="btn filter-button" onclick="">>3<i class="fa-solid fa-star"></i></button>
-                </div>
-                <hr>
-            </div>
+  <div class="store_container" style="position: absolute;">
+    <!-- Filter By Search -->
+    <div class="dummy_container">
+      <div class="filter-box">
+        <p class="filter-heading">Filter by Price</p>
+
+        <div class="f-button-groups">
+          <button class="btn filter-button" onclick="displayUsers()">
+            All Products
+          </button>
+          <button class="btn filter-button" onclick="filterOne_hun()">
+            $1 - $100
+          </button>
+          <button class="btn filter-button" onclick="filterOnehun_Fivehun()">
+            $100 - $500
+          </button>
+          <button class="btn filter-button" onclick="filterFivehun_Oneth()">
+            $500 - $1000
+          </button>
+          <button class="btn filter-button" onclick="filterOneth_Above()">
+            $1000 - Above
+          </button>
         </div>
+        <hr />
+      </div>
+      <!-- Filter by Category -->
 
+      <div class="filter-box">
+        <p class="filter-heading">Filter by category</p>
 
-
-
-
-        <div class="container my-3" id="container">
-            <div class="row" style="height: 300px;" id="productList">
-
-            </div>
-
-
+        <div class="f-button-groups">
+          <button class="btn filter-button" onclick="displayUsers()">
+            All Products
+          </button>
+          <button class="btn filter-button" onclick="filterSmartPhones()">
+            Smartphones
+          </button>
+          <button class="btn filter-button" onclick="filterLaptops()">
+            Laptops
+          </button>
+          <button class="btn filter-button" onclick="filterFragrances()">
+            Fragrances
+          </button>
+          <button class="btn filter-button" onclick="filterSkincare()">
+            Skincare
+          </button>
+          <button class="btn filter-button" onclick="filterGroceries() ">
+            Groceries
+          </button>
+          <button class="btn filter-button" onclick="filterHomeDec()">
+            Home-decoration
+          </button>
         </div>
+        <hr />
+      </div>
+
+      <!-- Filter by Rating -->
+      <div class="filter-box">
+        <p class="filter-heading">Filter by Rating</p>
+
+        <div class="f-button-groups">
+          <button class="btn filter-button" onclick="displayUsers()">
+            All Products
+          </button>
+          <button class="btn filter-button" onclick="filterAboveFourPointFive()">
+            > 4.5<i class="fa-solid fa-star"></i>
+          </button>
+
+          <button class="btn filter-button" onclick="filterAboveFourtoFourPointFive()">
+            4 - 4.5<i class="fa-solid fa-star"></i>
+          </button>
+
+          <button class="btn filter-button" onclick="filterAboveThreePointFiveToFour()">
+            3.5 - 4<i class="fa-solid fa-star"></i>
+          </button>
+
+          <button class="btn filter-button" onclick="filterBelowThreePointFive()">
+            < 3.5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+        <hr />
+      </div>
     </div>
 
+    <div class="container my-3" id="container">
+      <div class="row" style="height: 300px" id="productList"></div>
+    </div>
+  </div>
+</div>
+  <script src="./newStore.js"></script>
 
-
-
-
-
-
-    <script src="./newStore.js"></script>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
